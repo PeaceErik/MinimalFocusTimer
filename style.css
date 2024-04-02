@@ -24,15 +24,40 @@ body {
     align-items: end;
     height: 100vh;
     width: 20%;
+    padding: 35px 35px;
 }
 
 .ctrl-col {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .ctrl-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    width: 75%;
+    height: 4vh;
+}
 
+.ctrl-container p {
+    font-size: 1.1rem;
+}
+
+.btn-row {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+    gap: 10%;
+}
+
+.btn-row button {
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 .art-box {
