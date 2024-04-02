@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b7bbbf;
+}
+
+.view {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    height: 100vh;
+    width: 20%;
+}
+
+.art-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+}
+
+.ring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Styles for the ring shape */
+    height: 50rem;
+    width: 50rem;
+    border: 20px solid #222220;
+    border-radius: 100%;
+}
+
+.circle {
+
+    height: 10rem;
+    width: 10rem;
+    background-color: #222220;
+    border-radius: 100%;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b7bbbf;
+    font-size: 5rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 35px 35px;
+    text-align: right;
+    height: 100vh;
+    width: 20%;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.creator {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
