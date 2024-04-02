@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: #b7bbbf;
+    background-color: #eff1f1;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .view {
@@ -18,8 +21,18 @@ body {
 
 .controls {
     display: flex;
+    align-items: end;
     height: 100vh;
     width: 20%;
+}
+
+.ctrl-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.ctrl-container {
+
 }
 
 .art-box {
@@ -53,7 +66,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b7bbbf;
+    color: #eff1f1;
     font-size: 5rem;
 }
 
