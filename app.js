@@ -11,7 +11,7 @@ let seconds = 10;
 
 function startTimer() {
 
-    let focusTimer = document.getElementById("focusTimerState").value = "true";
+    let focusTimer = true;
 
     if (focusTimer === true) {
         userCounter = focusCounter;
@@ -27,11 +27,11 @@ function startTimer() {
         seconds = 10;     
         userCounter --;
 
-        if( userCounter === 0 && focusTimer === true) {
-            document.getElementById("focusTimerState").value = false;
+        if(userCounter === 0 && focusTimer === true) {
+            focusTimer = false;
         } 
         else {
-            document.getElementById("focusTimerState").value = true;
+            focusTimer = true;
         } 
     }
 
