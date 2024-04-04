@@ -9,41 +9,24 @@ let seconds = 10;
 
 
 function secondsCounter() {
+
+    
     if (seconds > 0) {
         seconds --;
-    }
-}
-
-
-function startTimer() {
-
-    if (focusTimer === true) {
-        userCounter = focusCounter;
     } else {
-        userCounter = breakCounter;
-    }
-
-    if (seconds > 0) {
-        seconds --;
-        console.log(seconds)
-    } 
-    else {
-        seconds = 10;     
         userCounter --;
-
-        if(userCounter === 0 && focusTimer === true) {
-            focusTimer = false;
-        } 
-        else {
-            focusTimer = true;
-        } 
+        seconds = 10;
     }
 
-    document.getElementById("counter").innerHTML=`${userCounter}`;
+    if (userCounter === 0) {
+        
+    }
+
+    console.log(seconds)
+
 }
 
-
-
-setInterval(startTimer, 1000);
+document.getElementById("counter").innerHTML = focusCounter;
+setInterval(secondsCounter, 1000);
   
 })
