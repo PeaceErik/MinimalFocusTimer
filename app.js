@@ -8,10 +8,14 @@ let seconds = 10;
 
 
 
+function secondsCounter() {
+    if (seconds > 0) {
+        seconds --;
+    }
+}
+
 
 function startTimer() {
-
-    let focusTimer = true;
 
     if (focusTimer === true) {
         userCounter = focusCounter;
