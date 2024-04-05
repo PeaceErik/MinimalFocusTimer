@@ -56,8 +56,13 @@ body {
 
 .btn-row button {
     font-size: 1rem;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
+}
+
+.active {
+    border: 1px solid #222220!important;
+    border-radius: 5%;
 }
 
 .art-box {
@@ -81,19 +86,34 @@ body {
 }
 
 .circle {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 10rem;
     width: 10rem;
     background-color: #222220;
     border-radius: 100%;
 }
 
+.fill-the-void {
+    height: 20rem;
+}
+
 #counter {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10rem;
     color: #eff1f1;
     font-size: 5rem;
+}
+
+#switch-state {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
