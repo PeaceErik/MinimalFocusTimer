@@ -41,16 +41,20 @@ function timeButtons(Event) {
     }
 }
 
+// Binding my focus buttons to the event on "click"
 focusBtns.forEach(element => {
     element.addEventListener('click', timeButtons.bind(Event))
 });
 
+// Binding my break buttons to the event on "click"
 breakBtns.forEach(element => {
     element.addEventListener('click', timeButtons.bind(Event))
 })
 
 // Function for decrementing seconds
-// and decrementing the current counter
+// and decrementing the current counter,
+// running the switchCounter function when current
+// timer reaches 0.
 function secondsCounter() {
 
     if (seconds > 0) {
@@ -75,13 +79,13 @@ function switchCounter(numOfSwitches) {
     if (numOfSwitches) {
         userCounter = focusCounter;
         // Displaying the "focus" message
-        document.getElementById("switch-state").innerHTML = "<p>It's time to focus!</p>"
+        document.getElementById("switch-state").innerHTML = "<p class='state-msg'>time to focus!</p>"
     }
     else
     {
         userCounter = breakCounter;
         // Displaying the "break" message
-        document.getElementById("switch-state").innerHTML = "<p>Take a break gamle!</p>"
+        document.getElementById("switch-state").innerHTML = "<p class='state-msg'>take a break..</p>"
     }
     
 }
