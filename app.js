@@ -2,11 +2,11 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 // Setting seconds
-let seconds = 5;
+let seconds = 60;
 
 // Default counter values
-let breakCounter = 2;
-let focusCounter = 3;
+let breakCounter = 15;
+let focusCounter = 45;
 
 // Default Timer state: true = focus timer
 let numOfSwitches = true;
