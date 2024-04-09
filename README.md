@@ -8,3 +8,7 @@ by Rick Rubin.
 The project is just a bit of fun combining minimalistic design,
 with a minimalistic approach to the code itself.
 
+
+- Need to make it responsive
+- Add gsap animations
+
