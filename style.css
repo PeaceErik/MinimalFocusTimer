@@ -143,3 +143,36 @@ body {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+
+
+/* Smartphone styles below */
+
+@media only screen and (max-width: 767px) {
+    
+    .ring {
+        height: 15rem;
+        width: 25rem;
+        border: 10px solid black;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 100%;
+    }
+    
+    #counter {
+        font-size: 2rem;
+    }
+
+    .state-msg {
+        font-size: 1rem;
+    }
+
+    .title {
+        padding: 20px 20px;
+    }
+
+    .title p {
+        font-size: 1.1rem;
+    }
+  }
